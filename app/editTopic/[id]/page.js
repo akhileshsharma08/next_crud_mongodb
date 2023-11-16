@@ -3,7 +3,7 @@ import EditForm from '@/app/components/EditForm'
 
 const getTopicById = async (id) => {
   try {
-    const res = await fetch(`http://localhost:3000/api/topics/${id}`, {
+    const res = await fetch(`https://next-crudv1.vercel.app/api/topics/${id}`, {
       cache: "no-store",
     });
 

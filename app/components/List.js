@@ -12,7 +12,7 @@ const List = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch("http://localhost:3000/api/topics", {
+        const res = await fetch("https://next-crudv1.vercel.app/api/topics", {
           cache: "no-store",
         });
 
@@ -32,7 +32,7 @@ const List = () => {
 
   const deleteTopic = async (id) => {
     try {
-      const res = await fetch(`http://localhost:3000/api/topics?id=${id}`, {
+      const res = await fetch(`https://next-crudv1.vercel.app/api/topics?id=${id}`, {
         method: "DELETE",
       });
 

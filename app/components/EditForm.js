@@ -12,7 +12,7 @@ const EditForm = ({ id, title, description }) => {
     e.preventDefault();
 
     try {
-      const res = await fetch(`http://localhost:3000/api/topics/${id}`, {
+      const res = await fetch(`https://next-crudv1.vercel.app/api/topics/${id}`, {
         method: "PUT",
         headers: {
           "Content-type": "application/json",
